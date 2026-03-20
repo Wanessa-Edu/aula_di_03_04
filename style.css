@@ -1,0 +1,34 @@
+*{
+    /*bloco de reset*/
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+    margin: 0;
+    font-family: Arial;
+    background-color: #a0c4ff;
+    color: #c1e1c1;
+}
+header{
+    background-color: #ffd6e0;
+    color: #f8f9fa;
+    text-align: center;
+}
+nav a{
+    color: #fff1f5;
+    text-decoration: none;
+    padding: 4px;
+    text-align: center;
+}
+h2{
+    color: #d0ffbe;
+}
+.bloco{/*class procede de .*/
+background-color: #cdbeff;
+border: 1px dotted #7299ff;
+border-radius: 25%;
+border-style: groove;
+padding: 16px;
+margin-bottom: 16px;
+border-top: 2px solid  	#ffedbe; 
+}
