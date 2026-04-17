@@ -5,7 +5,7 @@
 body{
     text-align: center;
     margin: 0;
-    font-family: Arial;
+    font-family: Arial, Helvetica, sans-serif;
     background-color: #a0c4ff;
     color: #c1e1c1;
 }
@@ -19,11 +19,15 @@ nav a{
     text-decoration: none;
     padding: 4px;
     text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; /*radius é a borda arredondada*/
+    background-color: #E9E0D5;
 }
 h2{
     color: #d0ffbe;
 }
 .bloco{/*class procede de .*/
+    
 background-color: #cdbeff;
 border: 1px dotted #7299ff;
 border-radius: 25%;
@@ -33,28 +37,37 @@ margin-bottom: 16px;
 border-top: 2px solid  	#ffedbe; 
 }
 
-#galeria { /* # dignifica id, onde coloca-se por ex.: id="galeria"
+#galeria{ /* # significa id, onde coloca-se por ex.: id="galeria"
     só pode ter 1 com mesmo nome por página*/
     display: flex;
     flex-wrap: wrap;
     gap: 24px; /*espaço entre elementos dentro do id*/
-    justify-content: flex-start; /*reforçando que ele vai estar flexível*/
+    justify-content: center; /*reforçando que ele vai estar "flexivel"*/
     padding: 20px;
-}
 
-.foto {
-    background: #fff1f5;
-    padding: 12px 12px 20px 12px; /* lat dir, esq, baixo e topo */
+}
+.foto{
+    background: #ffffff;
+    padding: 12px 12px 20px 12px; /*lat dir, esq, baixo e topo*/
     border: 1px solid #dddddd;
     box-shadow: 0 4px 10px #000000;
-    width: 220px;
-    text-align: center;
+    width: 220px;/*largura*/
+    text-align: center;/*alinhamento ao centro*/
     border-radius: 4px;
 }
 
-.foto img {
+.foto img{
     width: 100%;
     height: 220px;
     object-fit: cover; /*efeito de sobrepor*/
     display: block;
+}
+.foto img:hover{
+    transform: scale(1.35) rotate(2deg);
+}
+.legenda{
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace';
+    fonte-size: 10px;
+    font-style: italic;
 }
